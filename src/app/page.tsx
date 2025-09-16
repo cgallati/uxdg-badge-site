@@ -46,14 +46,14 @@ export default function Home() {
               <div className="bg-gray-900 rounded-lg p-6 md:p-8">
                 <h3 className="text-lg md:text-xl font-semibold mb-3 text-red-500">Program Overview</h3>
                 <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                  Join the Savannah College of Art and Design's premier UX Design program. 
+                  Join the Savannah College of Art and Design&apos;s premier UX Design program. 
                   Learn from industry professionals and build portfolio-ready projects that 
                   solve real-world problems.
                 </p>
               </div>
 
               <div className="bg-gray-900 rounded-lg p-6 md:p-8">
-                <h3 className="text-lg md:text-xl font-semibold mb-3 text-red-500">What You'll Learn</h3>
+                <h3 className="text-lg md:text-xl font-semibold mb-3 text-red-500">What You&apos;ll Learn</h3>
                 <ul className="text-gray-300 text-sm md:text-base space-y-2">
                   <li>• User Research & Testing</li>
                   <li>• Interface Design & Prototyping</li>
