@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "npm run scrape-images && next build --turbopack",
+    "build:no-scrape": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "scrape-images": "node scripts/scrape-portfolio-images.js"
   },
   "dependencies": {
     "react": "19.1.0",
@@ -22,6 +24,7 @@
     "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
-    "@eslint/eslintrc": "^3"
+    "@eslint/eslintrc": "^3",
+    "jsdom": "^25.0.1"
   }
 }

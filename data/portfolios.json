@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Steven Vasil",
+    "portfolioUrl": "https://stevenvasil.com",
+    "imageUrl": "https://stevenvasil.com/assets/startup25.png",
+    "localImage": "/portfolio-images/portfolio-1.jpg"
+  },
+  {
+    "name": "Andre Da Silva",
+    "portfolioUrl": "https://adasilva.framer.website/",
+    "imageUrl": "https://framerusercontent.com/assets/xnjNj6lpNtsGHRac4GDUQmUFrw.jpg",
+    "localImage": "/portfolio-images/portfolio-2.jpg"
+  },
+  {
+    "name": "Kara Rivenbark",
+    "portfolioUrl": "https://kararivenbark.framer.website/",
+    "imageUrl": "https://framerusercontent.com/images/wZUHTnwsZZqlmeR5jooa08bDk.jpg",
+    "localImage": "/portfolio-images/portfolio-3.jpg"
+  },
+  {
+    "name": "Regina Prieto",
+    "portfolioUrl": "https://reginaprieto.framer.website",
+    "imageUrl": "https://framerusercontent.com/assets/LWYmhUuQrJzRYE1ZZgUWgX4.png",
+    "localImage": "/portfolio-images/portfolio-4.jpg"
+  },
+  {
+    "name": "Emmaline Kim",
+    "portfolioUrl": "https://emmalinekim.framer.website",
+    "imageUrl": "https://framerusercontent.com/images/hxxCwUCYUIwUtgPh7XbmxEbKY.jpeg?width=4032&height=3024",
+    "localImage": "/portfolio-images/portfolio-5.jpg"
+  },
+  {
+    "name": "Divisha Kotawala",
+    "portfolioUrl": "https://divishakotawala.framer.website",
+    "imageUrl": "https://framerusercontent.com/images/5H76tDz8ZOLEdZNNm3DOfb0sGQ.png",
+    "localImage": "/portfolio-images/portfolio-6.jpg"
+  },
+  {
+    "name": "Chris DeMassa",
+    "portfolioUrl": "https://chrisdemassa.framer.website",
+    "imageUrl": "https://framerusercontent.com/images/rvSqwV2DTv8mkJ3yubr6uJyvKdE.png",
+    "localImage": "/portfolio-images/portfolio-7.jpg"
+  },
+  {
+    "name": "Brayden Wisniewski",
+    "portfolioUrl": "https://www.braydenw.com",
+    "imageUrl": "https://framerusercontent.com/assets/Wfd8GG69ummO6H3iI5FDp3fKSw4.png",
+    "localImage": "/portfolio-images/portfolio-8.jpg"
+  }
+]
