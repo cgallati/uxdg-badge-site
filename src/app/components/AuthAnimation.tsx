@@ -16,9 +16,9 @@ export default function AuthAnimation({ onComplete }: AuthAnimationProps) {
 
   useEffect(() => {
     const phaseTimings = {
-      verifying: 3000,   // 3 seconds
-      accessing: 2500,   // 2.5 seconds
-      granted: 3000      // 3 seconds, then fade
+      verifying: 1500,   // 1.5 seconds
+      accessing: 1500,   // 1.5 seconds
+      granted: 1000      // 1 second, then fade
     };
 
     let progressInterval: NodeJS.Timeout;
@@ -57,7 +57,7 @@ export default function AuthAnimation({ onComplete }: AuthAnimationProps) {
             setIsComplete(true);
             setTimeout(() => {
               onComplete();
-            }, 1000); // 1 second fade duration
+            }, 500); // 0.5 second fade duration
             break;
         }
       }, phaseTimings[currentPhase]);
@@ -114,7 +114,7 @@ export default function AuthAnimation({ onComplete }: AuthAnimationProps) {
                   style={{
                     strokeDasharray: '24',
                     strokeDashoffset: '24',
-                    animation: 'drawCheck 1s ease-out 0.5s forwards'
+                    animation: 'drawCheck 0.25s ease-out 0.25s forwards'
                   }}
                 />
               </svg>

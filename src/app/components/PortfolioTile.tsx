@@ -13,10 +13,10 @@ export default function PortfolioTile({ name, portfolioUrl, localImage }: Portfo
 
   return (
     <div className="flex flex-col">
-      {/* Portfolio Image - Square tile */}
-      <div 
+      {/* Portfolio Image - Rectangular tile */}
+      <div
         onClick={handleClick}
-        className="relative aspect-square bg-gray-800 rounded-lg overflow-hidden cursor-pointer transform transition-transform hover:scale-[1.02] active:scale-[0.98] shadow-lg"
+        className="relative aspect-[16/9] bg-gray-800 rounded-lg overflow-hidden cursor-pointer transform transition-transform hover:scale-[1.02] active:scale-[0.98] shadow-lg"
       >
         <Image
           src={localImage}
@@ -28,7 +28,7 @@ export default function PortfolioTile({ name, portfolioUrl, localImage }: Portfo
       </div>
       
       {/* Name below tile */}
-      <h3 className="text-white font-medium text-sm md:text-base text-center mt-4 px-2">
+      <h3 className="text-white font-medium text-base md:text-lg text-center mt-4 mb-6 px-2">
         {name}
       </h3>
     </div>
