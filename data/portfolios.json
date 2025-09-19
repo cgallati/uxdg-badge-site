@@ -46,5 +46,155 @@
     "portfolioUrl": "https://www.braydenw.com",
     "imageUrl": "https://framerusercontent.com/assets/Wfd8GG69ummO6H3iI5FDp3fKSw4.png",
     "localImage": "/portfolio-images/portfolio-8.jpg"
+  },
+  {
+    "name": "Chris Archie",
+    "portfolioUrl": "https://christopherarchie.com/",
+    "imageUrl": "https://framerusercontent.com/images/95nNDiHfTIm5hOPynizmtZTIfXI.png",
+    "localImage": "/portfolio-images/portfolio-9.jpg"
+  },
+  {
+    "name": "Kat Tassinari",
+    "portfolioUrl": "https://www.kattassinari.com",
+    "imageUrl": "https://cdn.prod.website-files.com/63493089c13c20961b45f04f/6373b572c8dbbffaee256da4_linear-webflow-rebuild.jpg",
+    "localImage": "/portfolio-images/portfolio-10.jpg"
+  },
+  {
+    "name": "Jiya Damania",
+    "portfolioUrl": "https://jiyadamania.framer.website/",
+    "imageUrl": "https://framerusercontent.com/images/cymaR9XiMsigIgnc7we3RLwFPWQ.png",
+    "localImage": "/portfolio-images/portfolio-11.jpg"
+  },
+  {
+    "name": "Austin de Nijs",
+    "portfolioUrl": "https://austinuxdesign.design/",
+    "imageUrl": "https://framerusercontent.com/images/wxLo81cOwGsmGanedA0jnTwQ0.png?width=3779&height=2093",
+    "localImage": "/portfolio-images/portfolio-12.jpg"
+  },
+  {
+    "name": "Tan Tan Nguyen",
+    "portfolioUrl": "https://tantannguyen.com/",
+    "imageUrl": "https://framerusercontent.com/images/hIxUFf1Drx1QBJGms9IVkz6NV4.png?width=1440&height=1446",
+    "localImage": "/portfolio-images/portfolio-13.jpg"
+  },
+  {
+    "name": "Alana Watts",
+    "portfolioUrl": "https://sigiloflani.framer.website/",
+    "imageUrl": "https://framerusercontent.com/assets/IirsKLWhrYjrA5ELug5bKUgsU.png",
+    "localImage": "/portfolio-images/portfolio-14.jpg"
+  },
+  {
+    "name": "Lynn Vo",
+    "portfolioUrl": "https://lynnvo.framer.website",
+    "imageUrl": "https://framerusercontent.com/images/rquxLG2CnhQqAIE4nP4Bd8kXiE.jpg?scale-down-to=1024&width=2730&height=2228",
+    "localImage": "/portfolio-images/portfolio-15.jpg"
+  },
+  {
+    "name": "Ava Carroll",
+    "portfolioUrl": "https://readymag.website/avacarroll/portfolio/",
+    "imageUrl": "https://c-p.rmcdn1.net/64e9133e2134e400139ec021/4548488/Screenshot-a16b68be-0025-42b1-8a9c-15eca9e53dd3_readyscr_1024.jpg",
+    "localImage": "/portfolio-images/portfolio-16.jpg"
+  },
+  {
+    "name": "Arnav Khair",
+    "portfolioUrl": "https://arnavdsgn.framer.website/",
+    "imageUrl": "https://framerusercontent.com/images/dcf3DoIAfnvRI8tjmkawoKCvndo.png",
+    "localImage": "/portfolio-images/portfolio-17.jpg"
+  },
+  {
+    "name": "Ankita Chakrabarty",
+    "portfolioUrl": "https://ankitachakrabarty.com/",
+    "imageUrl": "https://i-p.rmcdn.net/673ba2350003dd9649b12431/5574193/image-e160a671-5724-4053-949a-0b1621fb5db5.png?w=1470&cX=0&cY=1&cW=1730&cH=1605",
+    "localImage": "/portfolio-images/portfolio-18.jpg"
+  },
+  {
+    "name": "Aarya Mahapatra",
+    "portfolioUrl": "https://aaryamahapatra.framer.website",
+    "imageUrl": "https://framerusercontent.com/images/c2P6Db3HLbi46kKSb46OR7vmuPI.png",
+    "localImage": "/portfolio-images/portfolio-19.jpg"
+  },
+  {
+    "name": "Trenton Jones",
+    "portfolioUrl": "https://trentmakes.framer.website",
+    "imageUrl": "https://framerusercontent.com/images/hcdh4YIVM1BPCxvpNlQjeeH0Q.png",
+    "localImage": "/portfolio-images/portfolio-20.jpg"
+  },
+  {
+    "name": "Shalimar Talbi",
+    "portfolioUrl": "https://www.shalimartalbi.work/",
+    "imageUrl": "https://images.squarespace-cdn.com/content/v1/683cd7e3d14106323bb8154e/c0a1930b-20ed-4f2b-b65c-0d8b207d0fa8/116.png?format=1500w",
+    "localImage": "/portfolio-images/portfolio-21.jpg"
+  },
+  {
+    "name": "Manasvi Ganesh Shejwalkar",
+    "portfolioUrl": "https://manasvis.myportfolio.com/",
+    "imageUrl": "https://cdn.myportfolio.com/56587602-e72a-43f8-8c95-d6a6ff721c9c/b68fa4aa-7356-4f28-ab6f-e462abdd35fe_rw_600.png?h=374894cd647a668b87b57274fe0ece2c",
+    "localImage": "/portfolio-images/portfolio-22.jpg"
+  },
+  {
+    "name": "Cobalt Arnold",
+    "portfolioUrl": "https://cobaltarnold.com",
+    "imageUrl": "https://cobaltarnold.com/assets/work/ascii/Photo%20Mar%2013%202023,%2012%2027%2008%20PM.jpg",
+    "localImage": "/portfolio-images/portfolio-23.jpg"
+  },
+  {
+    "name": "Dawna Zhang",
+    "portfolioUrl": "https://dawnadonut.com",
+    "imageUrl": "https://static.wixstatic.com/media/1c96c2_7877741295014f52b66b103ca549649e~mv2.jpg/v1/crop/x_995,y_338,w_2611,h_2507/fill/w_147,h_141,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/IMG_0463_JPG.jpg",
+    "localImage": "/portfolio-images/portfolio-24.jpg"
+  },
+  {
+    "name": "Brian Glennon",
+    "portfolioUrl": "https://designedbybg.com",
+    "imageUrl": "https://framerusercontent.com/images/OuTJRX7oV6nx1XADRaMDD9n2rw.png",
+    "localImage": "/portfolio-images/portfolio-25.jpg"
+  },
+  {
+    "name": "Maryam Eyvazi",
+    "portfolioUrl": "https://www.maryameyvazi.com/",
+    "imageUrl": "https://framerusercontent.com/assets/p62hpOIIdKvNesELN34ys8Hxjic.png",
+    "localImage": "/portfolio-images/portfolio-26.jpg"
+  },
+  {
+    "name": "Laura McLean",
+    "portfolioUrl": "https://lmclea22.myportfolio.com/",
+    "imageUrl": "https://cdn.myportfolio.com/13aa87f1-7ed0-460e-a58c-21654275c737/bbb32b19-5c7d-4f2a-b098-7493efcd128f_car_16x9.png?h=6ca1c8d6ada3702f5627a5cff01c3056",
+    "localImage": "/portfolio-images/portfolio-27.jpg"
+  },
+  {
+    "name": "Nick Rapoport",
+    "portfolioUrl": "https://www.uiuxnick.design/",
+    "imageUrl": "https://images.squarespace-cdn.com/content/v1/665f9688bfd74e7ed8a143b4/337e1deb-dce8-4a63-9a69-c305bcb0b788/GH1A1873_VSCO.jpg",
+    "localImage": "/portfolio-images/portfolio-28.jpg"
+  },
+  {
+    "name": "Yiheng Chen",
+    "portfolioUrl": "https://www.dropbox.com/scl/fo/rqnken011dkhxcru9orz6/ABNmt1FzylYcVF-I-aHx550?rlkey=abkpjmbdf408srhtsxrd9lyej&st=54494mnv&dl=0",
+    "imageUrl": null,
+    "localImage": null
+  },
+  {
+    "name": "Salman Shariff",
+    "portfolioUrl": "https://salman1331.github.io/my-portfolio/",
+    "imageUrl": "https://salman1331.github.io/my-portfolio/assets/images/icons/icon-1.jpg",
+    "localImage": "/portfolio-images/portfolio-30.jpg"
+  },
+  {
+    "name": "Francisca Gamboa",
+    "portfolioUrl": "https://franciscagamboa.art/",
+    "imageUrl": "https://i-p.rmcdn.net/68555b04309de8d39008a9a2/image-49f9d084-2b6c-45cf-8934-6c142a965eb9.png?cX=0&cY=0&cW=364&cH=563",
+    "localImage": "/portfolio-images/portfolio-31.jpg"
+  },
+  {
+    "name": "Randeep Satish (Randy)",
+    "portfolioUrl": "https://randeepsatish007.myportfolio.com",
+    "imageUrl": "https://cdn.myportfolio.com/3a206872-715b-44de-871c-4a76cf2c1b24/5727d0f5-7c32-4342-9e9e-9124286afc90_rwc_242x0x1439x1080x1439.png?h=94cec451fb1bdcd9d639f25f7597286e",
+    "localImage": "/portfolio-images/portfolio-32.jpg"
+  },
+  {
+    "name": "YIWEN HUANG",
+    "portfolioUrl": "https://drive.google.com/file/d/1KzypTdd6AwRphSWctRUeY7mA2WSwE7Pq/view?usp=drive_link",
+    "imageUrl": null,
+    "localImage": null
   }
 ]

@@ -131,12 +131,12 @@ function findBestImage(dom, baseUrl) {
   return bestImage;
 }
 
-async function scrapePortfolioImages() {
+async function scrapePortfolioImages(inputPortfolios = null) {
   console.log('Starting portfolio image scraping...');
-  
-  // Read the portfolios data
+
+  // Read the portfolios data (or use provided data)
   const portfoliosPath = path.join(__dirname, '../data/portfolios.json');
-  const portfolios = JSON.parse(fs.readFileSync(portfoliosPath, 'utf8'));
+  const portfolios = inputPortfolios || JSON.parse(fs.readFileSync(portfoliosPath, 'utf8'));
   
   // Ensure public/portfolio-images directory exists
   const imagesDir = path.join(__dirname, '../public/portfolio-images');
@@ -150,41 +150,61 @@ async function scrapePortfolioImages() {
     const portfolio = portfolios[i];
     console.log(`Processing ${portfolio.name} (${i + 1}/${portfolios.length})...`);
 
+    // Skip if both imageUrl and localImage already exist
+    if (portfolio.imageUrl && portfolio.localImage) {
+      console.log(`✓ Skipping ${portfolio.name} - already has image`);
+      updatedPortfolios.push(portfolio);
+      continue;
+    }
+
     try {
-      console.log(`Scraping: ${portfolio.portfolioUrl}`);
-      
-      // Fetch and parse the portfolio website
-      const html = await fetchHTML(portfolio.portfolioUrl);
-      const dom = new JSDOM(html);
-      const imageUrl = findBestImage(dom, portfolio.portfolioUrl);
-      
-      if (!imageUrl) {
-        console.log(`⚠ No suitable image found for ${portfolio.name}`);
-        updatedPortfolios.push({
-          ...portfolio,
-          imageUrl: null,
-          localImage: null
-        });
-        continue;
+      let imageUrl = portfolio.imageUrl;
+      let shouldScrape = !imageUrl;
+
+      // If we have imageUrl but no localImage, use the existing imageUrl
+      if (portfolio.imageUrl && !portfolio.localImage) {
+        console.log(`Using existing imageUrl for ${portfolio.name}: ${portfolio.imageUrl}`);
+        imageUrl = portfolio.imageUrl;
+        shouldScrape = false;
       }
-      
+
+      // If we need to scrape for imageUrl
+      if (shouldScrape) {
+        console.log(`Scraping: ${portfolio.portfolioUrl}`);
+
+        // Fetch and parse the portfolio website
+        const html = await fetchHTML(portfolio.portfolioUrl);
+        const dom = new JSDOM(html);
+        imageUrl = findBestImage(dom, portfolio.portfolioUrl);
+
+        if (!imageUrl) {
+          console.log(`⚠ No suitable image found for ${portfolio.name}`);
+          updatedPortfolios.push({
+            ...portfolio,
+            imageUrl: null,
+            localImage: null
+          });
+          continue;
+        }
+      }
+
       const filename = `portfolio-${i + 1}.jpg`;
       const localPath = path.join(imagesDir, filename);
-      
-      // Download the scraped image
+
+      // Download the image (whether scraped or from existing imageUrl)
       await downloadImage(imageUrl, localPath);
-      
+
       updatedPortfolios.push({
         ...portfolio,
         imageUrl: imageUrl,
         localImage: `/portfolio-images/${filename}`
       });
-      
+
       console.log(`✓ Downloaded image for ${portfolio.name} from ${imageUrl}`);
-      
+
     } catch (error) {
       console.error(`✗ Failed to process ${portfolio.name}:`, error.message);
-      
+
       // Add portfolio without image
       updatedPortfolios.push({
         ...portfolio,
@@ -197,9 +217,18 @@ async function scrapePortfolioImages() {
     await new Promise(resolve => setTimeout(resolve, 500));
   }
 
-  // Write updated portfolios data
-  fs.writeFileSync(portfoliosPath, JSON.stringify(updatedPortfolios, null, 2));
-  console.log('Portfolio image scraping completed!');
+  // In production/build environments, don't write back to source
+  // Instead, return the updated data for use during build process
+  if (process.env.NODE_ENV === 'production' || process.env.NEXT_PHASE === 'phase-production-build') {
+    console.log('Production mode - not writing back to source file');
+    console.log('Portfolio image scraping completed!');
+    return updatedPortfolios;
+  } else {
+    // In development, write updated portfolios data back to source
+    fs.writeFileSync(portfoliosPath, JSON.stringify(updatedPortfolios, null, 2));
+    console.log('Portfolio image scraping completed!');
+    return updatedPortfolios;
+  }
 }
 
 // Run if called directly
