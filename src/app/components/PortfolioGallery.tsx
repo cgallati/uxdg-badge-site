@@ -1,3 +1,6 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import PortfolioTile from './PortfolioTile';
 import portfoliosData from '../../../data/portfolios.json';
 
@@ -10,11 +13,15 @@ interface Portfolio {
 
 export default function PortfolioGallery() {
   const portfolios = portfoliosData as Portfolio[];
+  const [validPortfolios, setValidPortfolios] = useState<Portfolio[]>([]);
 
-  // Filter out portfolios without images and randomize order
-  const validPortfolios = portfolios
-    .filter(portfolio => portfolio.localImage)
-    .sort(() => Math.random() - 0.5);
+  useEffect(() => {
+    // Filter out portfolios without images and randomize order on client
+    const filtered = portfolios
+      .filter(portfolio => portfolio.localImage)
+      .sort(() => Math.random() - 0.5);
+    setValidPortfolios(filtered);
+  }, []);
 
   return (
     <div className="w-full">
